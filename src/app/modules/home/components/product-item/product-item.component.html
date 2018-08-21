@@ -1,0 +1,18 @@
+<mat-card  >
+  <mat-card-header>
+    <mat-card-title>{{ product.title }}</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image [src]="product.thumbnail">
+  <mat-card-content>
+    {{ product.description }}
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>ADD </button>
+    <button mat-button>BUY NOW</button>
+  </mat-card-actions>
+</mat-card>
+<!-- <div>
+  <h3>{{ product.title }}</h3>
+  <img [src]="product.thumbnail" >
+  <p>{{ product.description }}</p>
+</div> -->
