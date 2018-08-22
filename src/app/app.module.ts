@@ -1,3 +1,4 @@
+import { HomeComponent } from './home/home.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -19,10 +20,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 // import { ProductEffects } from './home/store/effects/product.effect';
 // import { productReducer } from './home/store/reducers/product.reducer';
 // import { HomeComponent } from './modules/home/components/home/home.component';
+import { HeaderComponent, FooterComponent } from './shared';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
