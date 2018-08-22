@@ -1,0 +1,19 @@
+
+.mat-card{
+    background-color:#d8d8d8;
+    transition: all 0.25s ease-in-out;
+    &:hover{
+        box-shadow: 0 10px 15px -5px rgba(0,0,0, 0.8);
+    }
+}
+.product-info{
+    .product-name{
+        margin-bottom: 10px;
+        color:rgb(100, 100, 100);
+        font-size:0.88em;
+    }
+    .price{
+        font-weight: 500;
+    }
+}
+
