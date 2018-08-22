@@ -1,13 +1,13 @@
 import { Component, OnInit, Input, ChangeDetectionStrategy} from '@angular/core';
-import { Product } from '../../../../core/models/product';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss'],
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductComponent implements OnInit {
+export class ProductListComponent implements OnInit {
 
   constructor() { }
 

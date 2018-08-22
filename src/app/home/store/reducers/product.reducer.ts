@@ -1,4 +1,6 @@
-import * as ProductActions from './product.actions';
+import * as ProductActions from '../actions/product.actions';
+import {} from '../actions/product.actions';
+
 import { Product } from '../../models/product';
 
 export interface State {
@@ -28,8 +30,4 @@ export function productReducer(state = initialState, action: ProductActions.Acti
     }
   }
 
-export const getProducts = (state: State) => state.products;
 
-export const getError = (state: State) => state.error;
-
-export const getLoadStatus = (state: State) => state.loading;

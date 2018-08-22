@@ -3,7 +3,7 @@ import { Action } from '@ngrx/store';
 
 import { Actions, Effect} from '@ngrx/effects';
 import { ProductService} from '../../services/product.service';
-import * as productsActions from './product.actions';
+import * as productsActions from '../actions/product.actions';
 import { switchMap, map, catchError } from 'rxjs/operators';
 import { of } from 'rxjs/internal/observable/of';
 import { Observable } from 'rxjs/internal/Observable';

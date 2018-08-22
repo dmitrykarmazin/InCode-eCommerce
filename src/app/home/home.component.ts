@@ -1,9 +1,9 @@
-import { Product } from './../../../../core/models/product';
+import { Product } from './models/product';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import * as actions from '../../../../core/store/products/product.actions';
-import * as fromRoot from '../../../../core/store/products/product.reducer';
-import * as selectors from '../../../../core/store/products/product.selectors';
+import * as actions from './store/actions/product.actions';
+import * as fromRoot from './store/reducers/product.reducer';
+import * as selectors from './store/selectors/product.selectors';
 import { Store } from '@ngrx/store';
 
 @Component({
