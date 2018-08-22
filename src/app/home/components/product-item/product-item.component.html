@@ -1,13 +1,22 @@
-<mat-card  >
-  <mat-card-header>
+<mat-card >
+  <!-- <mat-card-header>
     <mat-card-title>{{ product.title }}</mat-card-title>
-  </mat-card-header>
-  <img mat-card-image [src]="product.thumbnail">
+  </mat-card-header> -->
   <mat-card-content>
-    {{ product.description }}
+    <img mat-card-image [src]="product.thumbnail">
+    <div class="product-info">
+      <h3 class="product-name">
+        <span class="name">
+          {{product.title}}
+        </span>
+      </h3>
+      <p class="price"><span>{{product.ptice}}</span></p> 
+    </div>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>ADD </button>
+    <button mat-button>
+      <i class="material-icons">shopping_cart</i>
+    </button>
     <button mat-button>BUY NOW</button>
   </mat-card-actions>
 </mat-card>
