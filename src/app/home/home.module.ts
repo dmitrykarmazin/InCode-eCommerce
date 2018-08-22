@@ -9,7 +9,7 @@ import { ProductItemComponent } from './components/product-item/product-item.com
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
-import { productReducer} from './store/reducers//product.reducer';
+import { productReducer} from './store/reducers/product.reducer';
 import { ProductEffects } from './store/effects/product.effect';
 
 import { ProductService } from './services/product.service';
@@ -22,7 +22,7 @@ import { CustomMaterialModule } from '../custom-material/custom-material.module'
     HomeRoutingModule,
     CustomMaterialModule,
     StoreModule.forFeature('product', productReducer),
-    EffectsModule.forRoot([ProductEffects])
+    EffectsModule.forFeature([ProductEffects])
   ],
   exports: [HomeComponent, ProductListComponent, ProductItemComponent],
   providers: [ ProductService ],
