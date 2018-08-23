@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home.routing.module';
-// import { CustomMaterialModule } from '../modules/custom-material/custom-material.module';
 
 import { HomeComponent } from './home.component';
 import { ProductListComponent } from './components/product-list/product-list.component';

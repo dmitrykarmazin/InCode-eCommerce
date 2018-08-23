@@ -17,9 +17,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-// import { ProductEffects } from './home/store/effects/product.effect';
-// import { productReducer } from './home/store/reducers/product.reducer';
-// import { HomeComponent } from './modules/home/components/home/home.component';
+
 import { HeaderComponent, FooterComponent } from './shared';
 
 @NgModule({
@@ -36,10 +34,8 @@ import { HeaderComponent, FooterComponent } from './shared';
     HomeModule,
     AppRoutingModule,
     // SharedModule,
-    // StoreModule.forRoot({'product': productReducer} ),
     StoreModule.forRoot({}),
     EffectsModule.forRoot([]),
-    // EffectsModule.forRoot([ProductEffects]),
     StoreDevtoolsModule.instrument({
       maxAge: 10
     }),
