@@ -1,13 +1,15 @@
 <mat-card >
   <mat-card-content>
-    <img mat-card-image [src]="product.thumbnail">
+    <a  routerLink="/product/{{product.id}}">
+        <img mat-card-image [src]="product.thumbnail">
+    </a>
     <div class="product-info">
       <h3 class="product-name">
         <span class="name">
           {{product.title}}
         </span>
       </h3>
-      <p class="price"><span>{{product.ptice}}</span></p> 
+      <p class="price"><span>{{product.price}}</span></p> 
     </div>
   </mat-card-content>
   <mat-card-actions>

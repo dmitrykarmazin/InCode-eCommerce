@@ -1,0 +1,32 @@
+<div class="product-containner">
+    <div class="product-details">
+        <div class="product-image">
+            <img [src]="product.thumbnail" class="main-image">
+        </div>
+        <div class="details-avalible">
+           
+    
+            <div class="addtocard">
+                    <button mat-button (click)="changeCount('-')">-</button>
+                    <input #count placeholder="1" min="1" type="number">
+                    <!-- <mat-form-field>
+                        <input #count matInput placeholder="1" min="1" type="number">
+                    </mat-form-field> -->
+                    <button mat-button (click)="changeCount('+')">+</button>
+                    <button mat-button color="accent">
+                            <i class="material-icons">shopping_cart</i>
+                            Add to Basket
+                    </button>
+            </div>
+            <p class="stock-details">
+                <span class="stock-mount"> Stock: {{ product.stock }}</span>
+            </p>
+        </div>
+
+        <div class="description">
+            <p>
+                {{product.description}}
+            </p>
+        </div>
+    </div>
+</div>    
