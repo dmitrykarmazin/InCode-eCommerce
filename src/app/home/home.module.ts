@@ -5,6 +5,7 @@ import { HomeRoutingModule } from './home.routing.module';
 import { HomeComponent } from './home.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -25,6 +26,6 @@ import { CustomMaterialModule } from '../custom-material/custom-material.module'
   ],
   exports: [HomeComponent, ProductListComponent, ProductItemComponent],
   providers: [ ProductService ],
-  declarations: [HomeComponent, ProductListComponent, ProductItemComponent]
+  declarations: [HomeComponent, ProductListComponent, ProductItemComponent, ProductPageComponent]
 })
 export class HomeModule { }

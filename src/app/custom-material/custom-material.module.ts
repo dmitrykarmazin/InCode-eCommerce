@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatInputModule } from '@angular/material/input';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -13,8 +14,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatGridListModule,
     MatButtonModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatInputModule
   ],
-  exports: [ CommonModule, MatCardModule , MatGridListModule , MatButtonModule, MatToolbarModule, FlexLayoutModule]
+  exports: [ CommonModule, MatCardModule , MatGridListModule , MatButtonModule, MatToolbarModule, FlexLayoutModule, MatInputModule]
 })
 export class CustomMaterialModule {}
